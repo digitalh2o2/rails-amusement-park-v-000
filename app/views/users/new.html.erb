@@ -1,0 +1,25 @@
+<h1>Sign Up My Friend!</h1>
+<%= form_for @user do |f| %>
+	<p><%= f.label :name %></p>
+	<%= f.text_field :name %>
+	
+	<p><%= f.label :password %></p>
+	<%= f.password_field :password %>
+
+	<p><%= f.label :height %></p>
+	<%= f.number_field :height %>
+
+	<p><%= f.label :happiness %></p>
+	<%= f.number_field :happiness %>
+
+	<p><%= f.label "How much money do you have?" %></p>
+	<%= f.number_field :tickets %>
+
+	<p><%= f.label :nausea %></p>
+	<%= f.number_field :nausea %>
+
+	<p><%= f.label "Do you own this amusement park?" %></p>
+	<%= f.check_box :admin  %>
+	<br>
+	<%= f.submit %>
+<% end %>

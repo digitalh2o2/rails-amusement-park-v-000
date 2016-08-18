@@ -1,0 +1,6 @@
+<% if !logged_in? %>
+	<%= link_to "Sign up", new_user_path %>
+	<%= link_to "Sign in", signin_path %>
+<% else %>
+	<%= link_to "Log Out", sign_out_path, method: :delete %>
+<% end %>
