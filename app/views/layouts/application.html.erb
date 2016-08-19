@@ -22,8 +22,11 @@
         <a class="navbar-brand" href="<%= root_url %>"/>Home</a>
         </div>
         <div class="navbar-collapse collapse">
+          <%= content_tag(:div, flash[:alert], id: "flash_alert") if flash[:alert] %>
           <ul class="nav navbar-nav">
+
            <%= render 'layouts/navigation' %>
+  
           </ul>
         </div><!--/.nav-collapse -->
       </div>
